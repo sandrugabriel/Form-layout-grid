@@ -1,0 +1,459 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0px;
+    background-color: #FAF6ED;
+}
+
+select {
+    display: block;
+    color: rgb(56, 56, 56);
+
+}
+
+p {
+    display: block;
+}
+
+img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+input {
+    display: block;
+    color: rgb(110, 110, 110);
+}
+
+#header-container {
+    background-color: #CD8263;
+    padding-top: 25px;
+    height: 100px;
+}
+
+#header-info {
+    color: white;
+    font-size: 17px;
+    margin: 0px;
+    padding-left: 25%;
+}
+
+#header-title {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0px;
+    padding-left: 25%;
+
+}
+
+.main-container {
+    padding: 0px 25%;
+}
+
+#required {
+    grid-area: required;
+}
+
+.basic-title {
+    display: inline-block;
+    grid-area: basic-title;
+    margin: 0px;
+    align-self: flex-end;
+}
+
+#txtName {
+    /* border: red 2px solid; */
+    grid-area: txtName;
+}
+
+#txtEmail {
+    grid-area: txtEmail;
+}
+
+#txtRole {
+    grid-area: txtRole;
+}
+
+#tshirt-size {
+    grid-area: tshirt-size;
+    justify-self: end;
+}
+
+#tshirt-design {
+    grid-area: tshirt-design;
+}
+
+#tshirt-color {
+    grid-area: tshirt-color;
+    justify-self: end;
+}
+
+#other-job {
+    grid-area: other-job;
+    align-self: end;
+}
+
+#tshirt-title {
+    grid-area: tshirt-title;
+}
+
+.basic-item {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.basic-textboxes {
+    height: 35px;
+    width: 100%;
+}
+
+#basic-info {
+    display: grid;
+    grid-template-columns: 3fr 5px 1fr 2fr;
+    grid-template-rows: 50px 70px;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "required required required required"
+        "basic-title sd tshirt-title tshirt-title"
+        "txtName sd tshirt-size tshirt-design "
+        "txtEmail sd tshirt-color tshirt-color"
+        "txtRole other-job other-job other-job";
+}
+
+.titleConfference {
+    margin: 0px;
+    align-self: center;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#main-checkbox {
+    grid-area: main-checkbox;
+}
+
+#img-activity {
+    grid-area: img-activity;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity {
+    grid-area: p-activity;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.activity-item {
+    border: rgb(203, 203, 203) 0.2px solid;
+    background-color: #FEFDF9;
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 10fr 1fr;
+    grid-template-rows: 40px 40px;
+    grid-row-gap: 10px;
+   
+}
+
+#conference-info{
+    grid-area: conference-info;
+    grid-template-areas:
+    "main-checkbox img-activity"
+    "sd p-activity";
+}
+
+#main-checkbox1{
+    grid-area: main-checkbox1;
+}
+
+#img-activity1 {
+    grid-area: img-activity1;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity1 {
+    grid-area: p-activity1;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-info1 {
+    grid-area: p-info1;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+#java-library-info{
+    grid-area: java-library-info;
+    grid-template-areas:
+    "main-checkbox1 img-activity1"
+    "p-info1 p-activity1";
+}
+
+#main-checkbox2{
+    grid-area: main-checkbox2;
+}
+
+#img-activity2 {
+    grid-area: img-activity2;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity2 {
+    grid-area: p-activity2;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-info2 {
+    grid-area: p-info2;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+#node-info{
+    grid-area: node-info;
+    grid-template-areas:
+    "main-checkbox2 img-activity2"
+    "p-info2 p-activity2";
+}
+
+#main-checkbox3{
+    grid-area: main-checkbox3;
+}
+
+#img-activity3 {
+    grid-area: img-activity3;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity3{
+    grid-area: p-activity3;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-info3 {
+    grid-area: p-info3;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+#java-framework-info{
+    grid-area: java-framework-info;
+    grid-template-areas:
+    "main-checkbox3 img-activity3"
+    "p-info3 p-activity3";
+}
+
+#main-checkbox4{
+    grid-area: main-checkbox4;
+}
+
+#img-activity4 {
+    grid-area: img-activity4;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity4{
+    grid-area: p-activity4;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-info4 {
+    grid-area: p-info4;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+#bulid-info{
+    grid-area: bulid-info;
+    grid-template-areas:
+    "main-checkbox4 img-activity4"
+    "p-info4 p-activity4";
+}
+
+#main-checkbox5{
+    grid-area: main-checkbox5;
+}
+
+#img-activity5 {
+    grid-area: img-activity5;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity5{
+    grid-area: p-activity5;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-info5 {
+    grid-area: p-info5;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+#npm-info{
+    grid-area: npm-info;
+    grid-template-areas:
+    "main-checkbox5 img-activity5"
+    "p-info5 p-activity5";
+}
+
+#main-checkbox6{
+    grid-area: main-checkbox6;
+}
+
+#img-activity6 {
+    grid-area: img-activity6;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-activity6{
+    grid-area: p-activity6;
+    align-self: center;
+    justify-self: flex-end;
+}
+
+#p-info6 {
+    grid-area: p-info6;
+    align-self: center;
+    justify-self: flex-start;
+    margin-left: 20px;
+}
+
+#express-info{
+    grid-area: express-info;
+    grid-template-areas:
+    "main-checkbox6 img-activity6"
+    "p-info6 p-activity6";
+}
+
+#register{
+    grid-area: register;
+}
+
+#total{
+    grid-area: total;
+    justify-self: flex-end
+}
+
+#activities-info{
+    margin-top: 50px;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    grid-template-areas:
+    "register register"
+    "conference-info conference-info"
+    "java-library-info node-info"
+    "java-framework-info bulid-info"
+    "npm-info express-info"
+    "total total";
+
+}
+
+.payment-info{
+    background-color: #FEFDF9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    border: rgb(203, 203, 203) 0.2px solid;
+}
+
+.info-bit {
+    display: block;
+    margin: 5px 20px;
+}
+
+#payment-title{
+    grid-area: payment-title;
+    margin: 0px;
+}
+
+#method{
+    grid-area: method;
+}
+
+#card-number{
+   grid-area: card-number;
+}
+
+#expiration-date{
+    grid-area: expiration-date;
+}
+
+#expiration-year{
+    grid-area: expiration-year;
+}
+
+#zip-code{
+    grid-area: zip-code;
+}
+
+#cvv{
+    grid-area: cvv;
+}
+
+#paypal{
+    grid-area: paypal;
+}
+
+#bitcoin{
+    grid-area: bitcoin;
+}
+
+#button{
+    grid-area: button;
+    width: 150px;
+    height: 50px;
+    padding: 5px 25px;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: #C54169;
+    border: 0px;
+    border-radius: 5px;
+}
+
+#payment-info{
+    margin-top: 25px;
+    margin-bottom: 150px;
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+    grid-template-areas:
+    "payment-title payment-title payment-title"
+    "method expiration-date expiration-year"
+    "card-number zip-code cvv"
+    "paypal paypal paypal"
+    "bitcoin bitcoin bitcoin"
+    "button button button"
+
+}
