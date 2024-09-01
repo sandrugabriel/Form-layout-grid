@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive-layout-form</title>
+</head>
+
+<body>
+
+    <header id="header-container">
+        <p id="header-info">Register for</p>
+        <p id="header-title">Full Stack Conference</p>
+    </header>
+
+    <main class="main-container">
+
+        <section id="basic-info">
+
+            <p id="required">*- required field</p>
+
+            <h2 class="basic-title">Basic Info</h2>
+
+            <div class="basic-item" id="txtName">
+                <p>Name:*</p>
+                <input class="basic-textboxes" type="text">
+            </div>
+
+            <div class="basic-item" id="txtEmail">
+                <p>Email:*</p>
+                <input class="basic-textboxes" type="text">
+            </div>
+
+            <div class="basic-item" id="txtRole">
+                <p>Job Role</p>
+                <select class="basic-textboxes">
+                    <option value="test">test</option>
+                    <option value="test1">test1</option>
+
+                </select>
+            </div>
+
+            <h2 class="basic-title" id="tshirt-title">T-Shirt Info</h2>
+
+            <div class="basic-item" id="tshirt-size">
+                <p>Size:</p>
+                <select class="basic-textboxes">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+            </div>
+
+            <div class="basic-item" id="tshirt-design">
+                <p>Design:</p>
+                <select class="basic-textboxes">
+                    <option value="Color">Color</option>
+                    <option value="White">White</option>
+                    <option value="Black">Black</option>
+                </select>
+            </div>
+
+            <div class="basic-item" id="tshirt-color">
+                <p>Color:</p>
+                <select class="basic-textboxes">
+                    <option value="Red">Red</option>
+                    <option value="Blue">Blue</option>
+                    <option value="Green">Green</option>
+                </select>
+            </div>
+
+            <input type="text" class="basic-textboxes" id="other-job">
+
+        </section>
+
+        <section id="activities-info">
+
+            <h2 id="register">Register for Activities*</h2>
+
+            <div class="activity-item" id="conference-info">
+
+                <div class="checkbox" id="main-checkbox">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">Main Conference</p>
+                </div>
+
+                <div id="img-activity">
+                    <img src="img/js.png" alt="js">
+                </div>
+
+                <p id="p-activity">$200</p>
+
+            </div>
+
+            <div class="activity-item" id="java-library-info">
+
+                <div class="checkbox" id="main-checkbox1">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">JavaScript Libraries Workshop</p>
+                </div>
+
+                <div id="img-activity1">
+                    <img src="img/physics.png" alt="js">
+                </div>
+
+                <p id="p-info1">Tuesday 9am-12pm</p>
+                <p id="p-activity1">$100</p>
+
+            </div>
+
+            <div class="activity-item" id="node-info">
+
+                <div class="checkbox" id="main-checkbox2">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">Node.js Workshop</p>
+                </div>
+
+                <div id="img-activity2">
+                    <img src="img/programing.png" alt="js">
+                </div>
+
+                <p id="p-info2">Tuesday 1pm-4pm</p>
+                <p id="p-activity2">$100</p>
+
+            </div>
+
+            <div class="activity-item" id="java-framework-info">
+
+                <div class="checkbox" id="main-checkbox3">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">JavaScript Frameworks Workshop</p>
+                </div>
+
+                <div id="img-activity3">
+                    <img src="img/icons8-angularjs-480.png" alt="js">
+                </div>
+
+                <p id="p-info3">Tuesday 9am-12pm</p>
+                <p id="p-activity3">$100</p>
+
+            </div>
+
+            <div class="activity-item" id="bulid-info">
+
+                <div class="checkbox" id="main-checkbox4">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">Build tools Workshop</p>
+                </div>
+
+                <div id="img-activity4">
+                    <img src="img/tool.png" alt="js">
+                </div>
+
+                <p id="p-info4">Tuesday 1pm-4pm</p>
+                <p id="p-activity4">$100</p>
+
+            </div>
+            
+            <div class="activity-item" id="npm-info">
+
+                <div class="checkbox" id="main-checkbox5">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">npm Workshop</p>
+                </div>
+
+                <div id="img-activity5">
+                    <img src="img/icons8-npm-480.png" alt="js">
+                </div>
+
+                <p id="p-info5">Tuesday 9am-12pm</p>
+                <p id="p-activity5">$100</p>
+
+            </div>
+
+            <div class="activity-item" id="express-info">
+
+                <div class="checkbox" id="main-checkbox6">
+                    <input type="checkbox" class="conference-item">
+                    <p class="titleConfference">Express Workshop</p>
+                </div>
+
+                <div id="img-activity6">
+                    <img src="img/icons8-express-js-500.png" alt="js">
+                </div>
+
+                <p id="p-info6">Tuesday 1pm-4pm</p>
+                <p id="p-activity6">$100</p>
+
+            </div>
+
+            <h2 id="total">Total: $0</h2>
+
+        </section>
+
+        <section id="payment-info">
+
+            <h2 id="payment-title">Payment Info</h2>
+
+            <div id="method">
+                <p>I'm going to pay with:</p>
+                <select class="basic-textboxes">
+                    <option value="PayPal">PayPal</option>
+                    <option value="Debit Card">Debit Card</option>
+                    <option value="Bitcoin">Bitcoin</option>
+                </select>
+            </div>
+
+            <div id="card-number">
+                <p>Card Number:*</p>
+                <input type="text" class="basic-textboxes">
+            </div>
+
+            <div id="expiration-date">
+                <p>Expiration Date:</p>
+                <input type="text" class="basic-textboxes">
+            </div>
+
+            <div id="expiration-year">
+                <p>Expiration Year:</p>
+                <input type="text" class="basic-textboxes">
+            </div>
+
+            <div id="zip-code">
+                <p>Zip Code:</p>
+                <input type="text" class="basic-textboxes">
+            </div>
+
+            <div id="cvv">
+                <p>CVV:</p>
+                <input type="text" class="basic-textboxes">
+            </div>
+
+            <div class="payment-info" id="paypal">
+
+                <h3 class="info-bit">PayPal</h3>
+                <p class="info-bit">If you selected the PayPal option we'll take you to PayPal's site to set up your
+                    billing
+                    information. When you click "Register" below.</p>
+
+            </div>
+
+            <div class="payment-info" id="bitcoin">
+
+                <h3 class="info-bit">Bitcoin</h3>
+                <p class="info-bit">If you selected the Bitcoin option we'll take you to the Coinbase site to set up
+                    your billing
+                    information. Due to the nature of exchanging Bitcoin, all Bitcoin transaction will be final.</p>
+
+            </div>
+
+            <button type="button" id="button">Register</button>
+            
+        </section>
+
+    </main>
+
+
+</body>
+
+</html>
